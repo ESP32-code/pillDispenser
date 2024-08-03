@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pill Dispenser Customization</title>
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="styles/styles.css">-->
+    <!-- Link to the JavaScript file -->
+    <script src="javascript/functions.js" defer></script>
+</head>
+<body onload="loadSettings()">
+    <div class="container">
+        <h1>Pill Dispenser Customization</h1>
+        <div class="pill-container">
+            <h2>Set Pill Names</h2>
+            <div class="pill-inputs">
+                <div>
+                    <label for="container1">Container 1:</label>
+                    <input type="text" id="container1" placeholder="Enter pill name">
+                </div>
+                <div>
+                    <label for="container2">Container 2:</label>
+                    <input type="text" id="container2" placeholder="Enter pill name">
+                </div>
+                <div>
+                    <label for="container3">Container 3:</label>
+                    <input type="text" id="container3" placeholder="Enter pill name">
+                </div>
+            </div>
+        </div>
+        <div class="schedule-container">
+            <h2>Weekly Schedule</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Morning</th>
+                        <th>Afternoon</th>
+                        <th>Noon</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td><input type="text" placeholder="Enter pills" data-day="monday" data-time="morning"></td>
+                        <td><input type="text" placeholder="Enter pills" data-day="monday" data-time="afternoon"></td>
+                        <td><input type="text" placeholder="Enter pills" data-day="monday" data-time="noon"></td>
+                    </tr>
+                    <!-- Repeat for other days -->
+                </tbody>
+            </table>
+        </div>
+        <button onclick="saveSettings()">Save</button>
+    </div>
+</body>
+</html>
